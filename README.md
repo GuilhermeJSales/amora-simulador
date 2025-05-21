@@ -1,54 +1,83 @@
-# React + TypeScript + Vite
+# Simulador de Compra de Imóvel aMORA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![image](https://github.com/user-attachments/assets/65e99223-77c2-40a5-8f16-91ac82e9f8a7)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Deploy
 
-## Expanding the ESLint configuration
+Acesse o projeto online:  
+👉 [Deploy](https://amora-simulador.vercel.app/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Descrição
+Simulador de financiamento imobiliário que calcula:
+- Valor da entrada necessária
+- Valor a ser financiado
+- Total a ser guardado
+- Valor mensal a ser poupado
+
+---
+
+## Tecnologias utilizadas
+- React
+- TypeScript
+- Tailwind CSS
+- React Hook Form
+- Zod
+- Vite
+
+---
+
+## Pré-requisitos
+- Node.js (versão 16 ou superior)
+- npm ou yarn
+- Git (opcional)
+
+---
+
+## Instalação
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/GuilhermeJSales/amora-simulador.git
+cd simulador-imovel-amora
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+2. Instale as dependências:
+   
+```bash
+npm install
+# ou
+yarn install
 ```
+
+3. Inicie o servidor de desenvolvimento:
+```bash
+npm run dev
+# ou
+yarn dev
+```
+
+---
+
+## Como Usar
+
+Preencha os campos:
+- Valor do imóvel: Ex: 300000
+- Percentual de entrada: Entre 5% e 20% (ex: 10)
+- Duração do contrato: Entre 1 e 5 anos (ex: 3)
+- Clique em "Simular"
+- Veja os resultados calculados
+
+---
+
+
+🙋‍♂️ Autor
+- Projeto desenvolvido para processo seletivo da empresa aMORA
+- Feito com 💙 por [Guilherme Jesus Sales](https://www.linkedin.com/in/guilherme-jesus-sales/)
+
+
+

@@ -42,7 +42,7 @@ Simulador de financiamento imobiliário que calcula:
 1. Clone o repositório:
 ```bash
 git clone https://github.com/GuilhermeJSales/amora-simulador.git
-cd simulador-imovel-amora
+cd amora-simulador
 
 ```
 
